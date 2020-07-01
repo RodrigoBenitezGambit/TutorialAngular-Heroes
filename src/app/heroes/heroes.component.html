@@ -1,0 +1,8 @@
+<h2>Mis Heroes</h2>
+<div>
+    <ul class="heroes">
+        <li *ngFor= "let heroe of heroes">
+            <span class="btn btn-primary">{{heroe.id}} </span>{{heroe.name}} <span>Poder: {{heroe.skill}}</span>
+        </li>
+    </ul>
+</div>

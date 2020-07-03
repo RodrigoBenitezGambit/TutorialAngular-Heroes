@@ -12,14 +12,4 @@
     </li>
   </ul>
 </div>
-<!-- Informacion del heroe-->
-<div *ngIf="selectedHero" class="heroes">
-  <h2>{{ selectedHero.name | uppercase }} Detalles</h2>
-  <div><span class="badge">id: </span>{{ selectedHero.id }}</div>
-  <div>
-    <label
-      >Nombre:
-      <input [(ngModel)]="selectedHero.name" placeholder="Ingrese Nombre" />
-    </label>
-  </div>
-</div>
+<app-heroe-detalle [hero]="selectedHero"></app-heroe-detalle>

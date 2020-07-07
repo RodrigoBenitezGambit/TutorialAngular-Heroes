@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroeDetalleComponent } from './heroe-detalle/heroe-detalle.component';
-import { from } from 'rxjs';
+//import { from } from 'rxjs';
 const routes: Routes = [
   {
     path: '',

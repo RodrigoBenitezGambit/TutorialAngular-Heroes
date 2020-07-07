@@ -1,5 +1,5 @@
 <!-- Informacion del heroe-->
-<div *ngIf="hero" class="heroes">
+<div *ngIf="hero">
   <h2>{{ hero.name | uppercase }} Detalles</h2>
   <div><span class="badge">ID </span>{{ hero.id }}</div>
   <div>
@@ -8,4 +8,5 @@
       <input [(ngModel)]="hero.name" placeholder="Ingrese Nombre" />
     </label>
   </div>
+  <button (click)="goBack()">Go Back</button>
 </div>

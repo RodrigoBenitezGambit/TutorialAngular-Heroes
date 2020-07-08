@@ -28,4 +28,7 @@ export class HeroeDetalleComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  guardar(): void {
+    this.heroeService.updateHero(this.hero).subscribe(() => this.goBack());
+  }
 }
